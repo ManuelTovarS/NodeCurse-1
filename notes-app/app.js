@@ -1,6 +1,6 @@
-//Core modules
+//Core Modules
 const fileSystem = require("fs");
-//NPM Modiles
+//NPM Modules
 const validator = require("validator");
 const chalk = require("chalk");
 const yargs = require("yargs");
@@ -27,12 +27,6 @@ console.log(process.argv[2]); */
 //Change the version of the yargs
 yargs.version("1.1.0");
 
-//Add, remove, read, list
-
-const handlerAdd = () => {
-  console.log("Adding a new note");
-};
-
 //Create add command
 yargs.command({
   command: "add",
@@ -40,10 +34,19 @@ yargs.command({
   builder: {
     title: {
       describe: "This option allow you to enter the title of the note",
-      type: String,
+      type: "string",
+      demandOption: true,
+    },
+    body: {
+      describe: "This option allow you to enter the body of the note",
+      type: "string",
+      demandOption: true,
     },
   },
-  handler: handlerAdd,
+  handler: (argv) => {
+    console.log("Title: ", argv.title);
+    console.log("Body: ", argv.body);  
+  },
 });
 
 //Create remove command
@@ -73,4 +76,4 @@ yargs.command({
   },
 });
 
-yargs.argv;
+yargs.parse();
