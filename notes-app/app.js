@@ -2,10 +2,10 @@
 const fileSystem = require("fs");
 //NPM Modules
 const validator = require("validator");
-const chalk = require("chalk");
 const yargs = require("yargs");
 //Own Modules
-const { getNotes } = require("./notes");
+const { addNote, getNotes } = require("./notes");
+const { argv } = require("process");
 
 //fileSystem (core package)
 /* fileSystem.writeFileSync('note.txt', 'Hello this is a note created by manuel jose tovar ');
@@ -43,10 +43,7 @@ yargs.command({
       demandOption: true,
     },
   },
-  handler: (argv) => {
-    console.log("Title: ", argv.title);
-    console.log("Body: ", argv.body);  
-  },
+  handler: (argv) => addNote(argv.title, argv.body)
 });
 
 //Create remove command
