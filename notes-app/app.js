@@ -1,10 +1,8 @@
-//Core Modules
-const fileSystem = require("fs");
 //NPM Modules
 const validator = require("validator");
 const yargs = require("yargs");
 //Own Modules
-const { addNote, getNotes } = require("./notes");
+const { addNote, removeNote, getNotes } = require("./notes");
 const { argv } = require("process");
 
 //fileSystem (core package)
@@ -49,10 +47,15 @@ yargs.command({
 //Create remove command
 yargs.command({
   command: "remove",
-  description: "Remove a note",
-  handler: function () {
-    console.log("Removing the note");
+  builder: {
+    title: {
+      describe: "This option allow you to enter the title of the note to delete",
+      type: "string",
+      demandOption: true
+    }
   },
+  description: "Remove a note",
+  handler: (argv) => removeNote(argv.title)
 });
 
 //Create read command
