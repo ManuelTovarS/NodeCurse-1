@@ -71,7 +71,11 @@ const removeNote = (title) => {
 
   if (newNotes.length === notes.length) {
     console.log(
-      chalk.yellow.bold("There is no note with the following title: ",title, ",nothing change")
+      chalk.yellow.bold(
+        "There is no note with the following title: ",
+        title,
+        ",nothing change"
+      )
     );
   } else {
     console.log(
@@ -85,6 +89,21 @@ const removeNote = (title) => {
   }
 };
 
+/**
+ * Method to list the notes in the terminal
+ * @returns {string} That print all notes
+ */
+const listNotes = () => {
+  const notes = loadNotes();
+  let count = 1;
+
+  console.log(chalk.green.bold("Your notes are:"));
+  notes.forEach((note) => {
+    console.log(chalk.yellow.bold(count + '-' + note.title));
+    count++;
+  });
+};
+
 const getNotes = () => {
   return "Your notes...";
 };
@@ -93,4 +112,5 @@ module.exports = {
   getNotes,
   addNote,
   removeNote,
+  listNotes,
 };

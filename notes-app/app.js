@@ -2,7 +2,7 @@
 const validator = require("validator");
 const yargs = require("yargs");
 //Own Modules
-const { addNote, removeNote, getNotes } = require("./notes");
+const { addNote, removeNote, listNotes, getNotes } = require("./notes");
 const { argv } = require("process");
 
 //fileSystem (core package)
@@ -41,7 +41,7 @@ yargs.command({
       demandOption: true,
     },
   },
-  handler: (argv) => addNote(argv.title, argv.body)
+  handler: (argv) => addNote(argv.title, argv.body),
 });
 
 //Create remove command
@@ -49,13 +49,14 @@ yargs.command({
   command: "remove",
   builder: {
     title: {
-      describe: "This option allow you to enter the title of the note to delete",
+      describe:
+        "This option allow you to enter the title of the note to delete",
       type: "string",
-      demandOption: true
-    }
+      demandOption: true,
+    },
   },
   description: "Remove a note",
-  handler: (argv) => removeNote(argv.title)
+  handler: (argv) => removeNote(argv.title),
 });
 
 //Create read command
@@ -71,9 +72,7 @@ yargs.command({
 yargs.command({
   command: "list",
   description: "List your notes",
-  handler: function () {
-    console.log("Listing out all notes");
-  },
+  handler: () => listNotes(),
 });
 
 yargs.parse();
