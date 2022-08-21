@@ -3,5 +3,9 @@
   { "title": "hacer ejercicio", "body": "hacer ejercicio en la mañana" },
   { "title": "estudiar node", "body": "estudiar en la noche" },
   { "title": "hola", "body": "aaaa" },
-  { "title": "Chao", "body": "Hola" }
+  { "title": "Chao", "body": "Hola" },
+  {
+    "title": "Note",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mauris orci, sollicitudin non tristique in, volutpat ut lacus. Proin viverra feugiat urna, a suscipit sem fringilla et. Nulla suscipit risus vel dolor elementum, in fringilla sapien dictum. Aliquam posuere, lectus vel pellentesque mollis, odio nibh tempor turpis, at euismod nulla sem non neque. Donec quam diam, imperdiet pellentesque nulla ac, vehicula consectetur ante. Nullam sapien nisl, blandit ut dolor sit amet, lobortis efficitur est. Proin pretium leo nunc, a accumsan ex eleifend sit amet. Donec elementum porta congue."
+  }
 ]
