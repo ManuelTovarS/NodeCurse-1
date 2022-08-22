@@ -33,8 +33,9 @@ node thejavascriptfile.js
 #### The magic commands to manage the notes are ⌨️ 🖥
 
 ℹ Before starting I should clarify that some commands require one or two parameters, these parameters are:
-- `--title=""`
-- `body=""`
+`--title=""`
+`body=""`
+
 Later in each of the commands it will be explained what they mean.
 
 - The add note command ✏️: Command to add a note to the JSON file, this command requires two parameters which are the **_title_** which is a name, identifier or keyword of the note or what it will contain. The other parameter is **_body_** which is the content of said note.
