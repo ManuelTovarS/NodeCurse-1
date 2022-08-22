@@ -20,14 +20,14 @@ First of all, to run this simple but great project, clone the repo to your compu
 
 When you have installed the dependencies you can go to the **_'notes-app'_** directory if you want to run the notes project, and run the app.js file type in the terminal
 
-```node
-app.js;
+```bash
+node app.js
 ```
 
 Now, if you want to enter the playground go to the **_'playground'_** directory, and run wherever file that you want using the command
 
-```node
-thejavascriptfile.js;
+```bash
+node thejavascriptfile.js
 ```
 
 #### The magic commands to manage the notes are ⌨️ 🖥
@@ -37,26 +37,26 @@ thejavascriptfile.js;
 -The add note command: Command to add a note to the JSON file, this command requires two parameters which are the **_title_** which is a name, identifier or keyword of the note or what it will contain. The other parameter is **_body_** which is the content of said note.
 
 In the following example you can see how to add a note:
-`node app.js add title="Example of a Title" body="Example of a Body"`
+```node app.js add title="Example of a Title" body="Example of a Body"```
 
 -The remove note command: Command to remove a note from the JSON file, this command requires a single parameter which is the **_title_** of the note which is the identifier of the note.
 
 In the following example you can see how to remove a note:
-`node app.js remove title="Example of a Title"`
+```node app.js remove title="Example of a Title"```
 
 -The list notes command: Command to list all the notes contained in the JSON file, this command does not require any additional parameters.
 
 In the following example you can see how to list all notes:
-`node app.js list`
+```node app.js list```
 
 -The read note command: Command to read a specific note in the JSON file, this command requires a single parameter which is the **_title_** of the note to be read.
 
 In the following example you can see how to read a note:
-`node read.js add title="Example of a Title"`
+```node read.js add title="Example of a Title"```
 
 Also if you want to see a description, help or what parameters are required about the command you want to run you can add after the command to use the word **_"--help"_**, which will explain in more detail what is required and what the command delivers.
 
 In the following example you can see how to use the help parameter for a command:
-`node read.js add --help"`
+```node read.js add --help"```
 
 📬 If you'd like to take a look at it and have any suggestions, feel free to do so.
