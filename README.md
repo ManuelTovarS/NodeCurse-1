@@ -16,7 +16,7 @@ The libraries (modules) 📦 that i use in this project are:
 
 ### How to run it? 🏁 🏎
 
-First of all, to run this simple but great project, clone the repo to your computer and install its dependencies with the command _`npm install`_ or _`npm i`_.
+First of all, to run this simple but great project, clone the repo to your computer, enter to the directory "notes-app" with the command _`cd notes-app`_ and install its dependencies with the command _`npm install`_ or _`npm i`_.
 
 When you have installed the dependencies you can go to the **_'notes-app'_** directory if you want to run the notes project, and run the app.js file type in the terminal
 
