@@ -30,7 +30,7 @@ Now, if you want to enter the playground go to the **_'playground'_** directory,
 node thejavascriptfile.js
 ```
 
-#### The magic commands to manage the notes are ⌨️ 🖥
+### The magic commands to manage the notes are ⌨️ 🖥
 
 ℹ Before starting I should clarify that some commands require one or two parameters, these parameters are:
 `--title=""`
