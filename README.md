@@ -41,14 +41,14 @@ Later in each of the commands it will be explained what they mean.
 
 In the following example you can see how to add a note:
 ```bash
-node app.js add title="Example of a Title" body="Example of a Body"
+node app.js add --title="Example of a Title" --body="Example of a Body"
 ```
 
 - The remove note command 🗑: Command to remove a note from the JSON file, this command requires a single parameter which is the **_title_** of the note which is the identifier of the note.
 
 In the following example you can see how to remove a note:
 ```bash
-node app.js remove title="Example of a Title"
+node app.js remove --title="Example of a Title"
 ```
 
 - The list notes command 📚: Command to list all the notes contained in the JSON file, this command does not require any additional parameters.
@@ -62,7 +62,7 @@ node app.js list
 
 In the following example you can see how to read a note:
 ```bash
-node read.js add title="Example of a Title"
+node read.js add --title="Example of a Title"
 ```
 
 Also if you want to see a description, help or what parameters are required about the command you want to run you can add after the command to use the word **_"--help"_**, which will explain in more detail what is required and what the command delivers.
