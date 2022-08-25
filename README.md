@@ -33,8 +33,7 @@ node thejavascriptfile.js
 ### The magic commands to manage the notes are ⌨️ 🖥
 
 ℹ Before starting I should clarify that some commands require one or two parameters, these parameters are:
-`--title=""`
-`body=""`
+`--title=""` `--body=""`
 
 Later in each of the commands it will be explained what they mean.
 
